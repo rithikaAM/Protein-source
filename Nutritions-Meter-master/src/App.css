@@ -1,0 +1,29 @@
+body{
+background-color: rgb(218, 194, 163);
+}
+.bar{
+  background-color: rgb(94, 73, 33);
+  padding: 10px 50px;
+}
+.nav-heading{
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+}
+.nav-link{
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+.nav-link:hover{
+  color: rgb(87, 152, 237);
+  text-decoration: underline;
+  transition-duration: 0.3s;
+}
+.heading{
+  font-size: 60px;
+}
+.heading2{
+  font-size: 40px;
+  text-shadow: 20px;
+}
