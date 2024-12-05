@@ -1,29 +1,124 @@
-body{
-background-color: rgb(218, 194, 163);
+/* General Styling */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
 }
-.bar{
-  background-color: rgb(94, 73, 33);
-  padding: 10px 50px;
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 30px;
 }
-.nav-heading{
+
+/* Header */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #4caf50;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
   color: white;
-  font-size: 30px;
-  font-weight: 600;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0 10px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
-.nav-link{
+
+.navbar a:hover {
+  background-color: #45a049;
+}
+
+/* File Upload Section */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+input[type="file"] {
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #4caf50;
   color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Loading Text */
+p {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+}
+
+/* Charts Section */
+.chart-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.chart-card {
+  background-color: #fefefe;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+}
+
+.chart-card h2 {
   font-size: 20px;
-  font-weight: 500;
+  margin-bottom: 10px;
+  color: #333;
 }
-.nav-link:hover{
-  color: rgb(87, 152, 237);
-  text-decoration: underline;
-  transition-duration: 0.3s;
+
+.chart-card p {
+  font-size: 14px;
+  color: #555;
 }
-.heading{
-  font-size: 60px;
-}
-.heading2{
-  font-size: 40px;
-  text-shadow: 20px;
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .chart-card {
+    width: 100%;
+  }
 }
